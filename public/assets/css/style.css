@@ -8,6 +8,8 @@
     --bg-two: #6eaff8;
     --bg-three: #3557c6;
     --text-color: #ffffff;
+    --text-tecs: #ffffff;
+    --text-color-section: #ffffff;
     --primary: #222223;
     --secondary: #4e4e4e;
     --timeline: #c9c9c9;
@@ -61,7 +63,7 @@ span {
     font-size: 2.4rem;
     text-align: center;
     text-shadow: #a2a2a2e6 0px 0px 39px;
-    background: var(--text-color);
+    background: var(--text-color-section);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 3rem auto;
@@ -91,6 +93,8 @@ small {
 body:has(#dark-mode-palanca:checked) {
     --bg-color: #ffffff;
     --text-color: #000000;
+    --text-tecs: #686c8e;
+    --text-color-section: #699de0;
     --primary: #ededed;
     --secondary: #cccccc;
     --complementary: #e9efff;
@@ -113,9 +117,9 @@ body:has(#dark-mode-palanca:checked) {
     align-items: center;
     padding: 0.5rem;
     z-index: 10;
-    background: #30303053;
-    box-shadow: 0 4px 30px #00000061;
-    backdrop-filter: blur(4px);
+    background: #55536740;
+    box-shadow: 0 4px 20px #00000061;
+    backdrop-filter: blur(3.5px);
 }
 
 .barra a {
@@ -136,9 +140,12 @@ body:has(#dark-mode-palanca:checked) {
     .barra {
         flex-direction: row;
         justify-content: center;
+        max-width: 30rem;
+        border-radius: 2rem;
         position: sticky;
-        top: 0;
+        top: 0.5rem;
         gap: 3rem;
+        margin: 1rem auto 1rem auto;
     }
 
     .barra a {
@@ -187,7 +194,7 @@ body:has(#dark-mode-palanca:checked) {
 .foto img {
     border-radius: 1.1rem;
     border: #5a40a34a solid 1px;
-    filter: grayscale(0.35);
+    filter: grayscale(0.30);
 }
 
 .foto::before {
@@ -198,7 +205,7 @@ body:has(#dark-mode-palanca:checked) {
     bottom: 0;
     height: 5.4rem;
     width: 5.4rem;
-    background-color: #5f4affb6;
+    background-color: #4a5fffb6;
     border-radius: 50%;
     filter: blur(15px);
     z-index: -1;
@@ -248,7 +255,7 @@ body:has(#dark-mode-palanca:checked) {
 }
 
 .roadmap-contenedor {
-    margin: auto 0 auto 0;
+    margin: auto;
 }
 
 .roadmap-contenedor p {
@@ -433,7 +440,7 @@ button::before {
     font-weight: 500;
     bottom: -1.8rem;
     left: 50%;
-    color: var(--text-color);
+    color: var(--text-tecs);
     font-family: var(--tec-family);
     transform: translateX(-50%);
     font-size: 1.3rem;
@@ -521,23 +528,13 @@ button::before {
     content: "PHP";
 }
 
-
-
-
-
-
-
-
-
 .icono_html::before {
     background-color: #e46b00;
 }
 
-
 .icono_css::before {
     background-color: #a851ff;
 }
-
 
 .icono_express::before,
 .icono_nextjs::before {
@@ -602,7 +599,7 @@ button::before {
 }
 
 .icono_java::before {
-    background-color: #62aedd;
+    background-color: #a7620d;
 }
 
 .icono_php::before {
@@ -723,6 +720,11 @@ button::before,
     border-radius: 0.4rem;
     margin: 0 auto;
 }
+
+.proyecto>img:hover {
+    transform: scale(1.03);
+}
+
 
 .proyecto>div {
     display: grid;
@@ -846,6 +848,7 @@ form button:hover,
 footer {
     padding: 3rem 0 1rem 0;
     text-align: center;
+    color: var(--text-color-section);
 }
 
 /*------------Animaciones----------*/
@@ -863,6 +866,7 @@ footer {
 .proyecto p,
 .contenedor-contacto h2,
 .contenedor-contacto small,
+form,
 button::before {
     view-timeline-name: --reveal;
     animation-name: show;
@@ -897,6 +901,7 @@ button::before {
     0% {
         opacity: 0;
         scale: 0.1;
+        transform: translateX(-100%);
     }
 
     100% {
