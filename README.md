@@ -7,7 +7,7 @@ Este repositorio contiene mi portfolio personal, un proyecto donde he decidido p
 
 ## Filosofía del Proyecto: "Vanilla-First"
 
-En pleno **2026** y un ecosistema saturado de frameworks y librerías pesadas, este proyecto nace con la intención de demostrar que el dominio de los fundamentos es lo que realmente permite hacer desarrollo web eficiente.
+En pleno **2026** y un ecosistema saturado de frameworks y librerías pesadas, este proyecto nace con la intención de demostrar que el dominio de los fundamentos es lo que realmente permite hacer un desarrollo web eficiente.
 
 **¿Por qué solo HTML y CSS?**
 - **Robustez:** Un código que cumple los estándares de la W3C es un código que no caduca.
@@ -19,7 +19,7 @@ En pleno **2026** y un ecosistema saturado de frameworks y librerías pesadas, e
 ## 🛠️ Puntos destacados de mi Código
 
 ### 1. Arquitectura de Diseño - Bento Grid
-He utilizado CSS Grid de forma avanzada para crear un layout tipo Bento box. En lugar de depender de frameworks como Tailwind o Bootstrap para la estructura, he definido un sistema de áreas (`grid-template-areas`) que se reorganiza de forma fluida mediante Media Queries.
+He utilizado CSS Grid de forma avanzada para crear un layout tipo Bento grid. En lugar de depender de frameworks como Tailwind o Bootstrap para la estructura, he definido un sistema de áreas que se reorganiza de forma fluida mediante Media Queries.
 
 ### 2. Gestión de Temas - Dark Mode nativo
 He implementado el modo oscuro aprovechando las capacidades modernas de CSS como la pseudo-clase `:has()` y las Custom Properties (Variables CSS). Esto permite cambiar toda la paleta de colores del sitio con una sola casilla de verificación sin escribir una sola línea de lógica compleja en JavaScript

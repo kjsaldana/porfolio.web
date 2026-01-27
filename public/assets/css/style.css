@@ -94,7 +94,7 @@ body:has(#dark-mode-palanca:checked) {
     --bg-color: #ffffff;
     --text-color: #000000;
     --text-tecs: #686c8e;
-    --text-color-section: #699de0;
+    --text-color-section: #3e8aed;
     --primary: #ededed;
     --secondary: #cccccc;
     --complementary: #e9efff;
@@ -118,7 +118,7 @@ body:has(#dark-mode-palanca:checked) {
     padding: 0.5rem;
     z-index: 10;
     background: #55536740;
-    box-shadow: 0 4px 20px #00000061;
+    box-shadow: 0 2px 20px #09174681;
     backdrop-filter: blur(3.5px);
 }
 
@@ -126,12 +126,13 @@ body:has(#dark-mode-palanca:checked) {
     padding: 0.6rem;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     text-shadow: #a2a2a2e6 0px 0px 39px;
 }
 
 .barra a:hover {
-    text-shadow: #788cff 0px 0px 26px;
+    text-shadow: #5869bd 0px 0px 26px;
+    transform: scale(1.1);
     color: #667bf6;
     transition: all ease-in-out 200ms;
 }
@@ -140,16 +141,17 @@ body:has(#dark-mode-palanca:checked) {
     .barra {
         flex-direction: row;
         justify-content: center;
-        max-width: 30rem;
+        max-width: 26rem;
         border-radius: 2rem;
         position: sticky;
-        top: 0.5rem;
+        top: 0.4rem;
         gap: 3rem;
         margin: 1rem auto 1rem auto;
     }
 
     .barra a {
-        padding: 0.5rem;
+        padding: 0.3rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -848,7 +850,7 @@ form button:hover,
 footer {
     padding: 3rem 0 1rem 0;
     text-align: center;
-    color: var(--text-color-section);
+    color: var(--text-color);
 }
 
 /*------------Animaciones----------*/
