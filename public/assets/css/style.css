@@ -766,6 +766,10 @@ button::before,
         align-items: center;
     }
 
+    .proyecto>img {
+        width: 30rem;
+    }
+
     .proyecto h2 {
         margin: 0;
     }
