@@ -9,6 +9,7 @@
     --bg-three: #3557c6;
     --text-color: #ffffff;
     --text-tecs: #ffffff;
+    --text-color-det: #b4b4b4;
     --text-color-section: #ffffff;
     --primary: #222223;
     --secondary: #4e4e4e;
@@ -16,6 +17,7 @@
     --neon: #5d4865a1;
     --technology: #1d1d1d93;
     --complementary: #6a5f9b4d;
+    --nav-bg: #353439ac;
 }
 
 /*------------Global---------*/
@@ -93,7 +95,8 @@ small {
 body:has(#dark-mode-palanca:checked) {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --text-tecs: #686c8e;
+    --text-tecs: #6a6b7a;
+    --text-color-det: #505050;
     --text-color-section: #3e8aed;
     --primary: #ededed;
     --secondary: #cccccc;
@@ -101,6 +104,7 @@ body:has(#dark-mode-palanca:checked) {
     --timeline: #8487a0;
     --technology: #dfdfdf9c;
     --neon: #ffffff00;
+    --nav-bg: #efefefb3;
 }
 
 @media (width >=768px) {
@@ -117,14 +121,14 @@ body:has(#dark-mode-palanca:checked) {
     align-items: center;
     padding: 0.5rem;
     z-index: 10;
-    background: #55536740;
+    background: var(--nav-bg);
     box-shadow: 0 2px 20px #09174681;
-    backdrop-filter: blur(3.5px);
+    backdrop-filter: blur(2px);
 }
 
 .barra a {
     padding: 0.6rem;
-    color: #ffffff;
+    color: var(--text-tecs);
     text-transform: uppercase;
     font-weight: 800;
     text-shadow: #a2a2a2e6 0px 0px 39px;
@@ -132,7 +136,6 @@ body:has(#dark-mode-palanca:checked) {
 
 .barra a:hover {
     text-shadow: #5869bd 0px 0px 26px;
-    transform: scale(1.1);
     color: #667bf6;
     transition: all ease-in-out 200ms;
 }
@@ -146,7 +149,7 @@ body:has(#dark-mode-palanca:checked) {
         position: sticky;
         top: 0.4rem;
         gap: 3rem;
-        margin: 1rem auto 1rem auto;
+        margin: 1rem auto 0 auto;
     }
 
     .barra a {
@@ -295,14 +298,14 @@ body:has(#dark-mode-palanca:checked) {
 }
 
 .tec-titulo {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--text-color);
     font-weight: 500;
 }
 
 .tec-detalles {
     font-size: 0.85rem;
-    color: #b4b4b4;
+    color: var(--text-color-det);
     margin-top: 2px;
     line-height: 1.3;
 }
