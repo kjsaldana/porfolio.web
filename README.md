@@ -18,7 +18,7 @@ En pleno **2026** y un ecosistema saturado de frameworks y librerías pesadas, e
 
 ## 🛠️ Puntos destacados de mi Código
 
-### 1. Arquitectura de Diseño - Bento Grid
+### 1. Arquitectura de Diseño
 He utilizado CSS Grid de forma avanzada para crear un layout tipo Bento grid. En lugar de depender de frameworks como Tailwind o Bootstrap para la estructura, he definido un sistema de áreas que se reorganiza de forma fluida mediante Media Queries.
 
 ### 2. Gestión de Temas - Dark Mode nativo
@@ -48,7 +48,7 @@ button::before {
 He implementado un entorno tridimensional para los elementos interactivos. Mediante el uso de transform-style: preserve-3d, los botones y tarjetas no son elementos planos, sino objetos con volumen en el eje Z. Esto permite crear efectos de iluminación y profundidad realistas.
 
 ```css
-.cards, .button {
+.technology, .button {
     z-index: 1;
     transform-style: preserve-3d;
     position: relative;

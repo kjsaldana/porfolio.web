@@ -551,7 +551,7 @@ button::before {
 }
 
 .icono_vite::before {
-    background-color: #b76be9;
+    background-color: rgb(130, 63, 255);
 }
 
 
@@ -604,7 +604,7 @@ button::before {
 }
 
 .icono_java::before {
-    background-color: #a7620d;
+    background-color: #de8d2b;
 }
 
 .icono_php::before {
