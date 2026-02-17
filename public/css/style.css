@@ -875,7 +875,7 @@ footer {
 .proyecto p,
 .contenedor-contacto h2,
 .contenedor-contacto small,
-form,
+form label,
 button::before {
     view-timeline-name: --reveal;
     animation-name: show;
