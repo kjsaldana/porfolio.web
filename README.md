@@ -18,8 +18,8 @@ En pleno **2026** y un ecosistema saturado de frameworks y librerías pesadas, e
 
 ## 🛠️ Puntos destacados de mi Código
 
-### 1. Arquitectura de Diseño
-He utilizado CSS Grid de forma avanzada para crear un layout tipo Bento grid. En lugar de depender de frameworks como Tailwind o Bootstrap para la estructura, he definido un sistema de áreas que se reorganiza de forma fluida mediante Media Queries.
+### 1. Enfoque de Desarrollo
+Layout tipo Bento Grid totalmente responsive creado con CSS Grid nativo. Sin frameworks externos (0 dependencias) para garantizar una carga rápida y un código mantenible.
 
 ### 2. Gestión de Temas - Dark Mode nativo
 He implementado el modo oscuro aprovechando las capacidades modernas de CSS como la pseudo-clase `:has()` y las Custom Properties (Variables CSS). Esto permite cambiar toda la paleta de colores del sitio con una sola casilla de verificación sin escribir una sola línea de lógica compleja en JavaScript
