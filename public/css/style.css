@@ -82,7 +82,7 @@ small {
     right: 1rem;
     bottom: 2rem;
     cursor: pointer;
-    background: var(--nav-bg);
+    background: var(--complementary);
     box-shadow: 0 2px 20px #09174681;
     backdrop-filter: blur(2px);
     border-radius: 1.1rem;
